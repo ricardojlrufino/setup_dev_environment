@@ -1,0 +1,25 @@
+#!/bin/bash
+
+read LINE
+
+
+bash_profile="${HOME}/.bash_profile"
+profile="${HOME}/.profile"
+bashrc="${HOME}/.bashrc"
+zshrc="${ZDOTDIR:-${HOME}}/.zshrc"
+
+# "Attempt update of zsh profile..."
+touch "$zshrc"
+if [[ -z $(grep "$LINE" "$zshrc") ]]; then
+    echo -e "\n$LINE" >> "$zshrc"
+    echo -e "ℹ️  ${YELLOW}Adicionano config permanente no ${zshrc} .... ${NO_COLOR}"
+    echo -e "✎ ${YELLOW}$LINE${NO_COLOR}"
+fi
+
+# "Attempt update of bash profile..."
+touch "$bashrc"
+if [[ -z $(grep "$LINE" "$bashrc") ]]; then
+    echo -e "\n$LINE" >> "$bashrc"
+    echo -e "ℹ️  ${YELLOW}Adicionano config permanente no ${bashrc} .... ${NO_COLOR}" 
+    echo -e "✎ ${YELLOW}$LINE${NO_COLOR}"
+fi

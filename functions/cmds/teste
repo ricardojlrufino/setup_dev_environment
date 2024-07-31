@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "standalone teste"
+if ask "Do you want to do such-and-such?"; then
+    echo "Yes"
+else
+    echo "No"
+fi

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [[  "$CFG_DEBUG_LEVEL" == "TRACE" ]]; then
+   echo -e "👁 ${PURPLE}[TRACE]${NO_COLOR}  $@"
+fi
