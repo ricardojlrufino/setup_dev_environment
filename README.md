@@ -26,7 +26,7 @@ Não deixe de ler os arquivos de instalação para entender o que será feito, c
 # Instalação 
 
 > git clone (this_repository)  ~/.setup_dev && cd "$_"
-> # Adicionar permissões de execução  
+> Adicionar permissões de execução  
 > find . -type f -iname "*.sh" -exec chmod +x {} \;  
 
 # Executando 
