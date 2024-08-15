@@ -10,7 +10,7 @@ O script de instalação também possui rotinas de diagnóstico para verificar p
 Os scripts permitem instalação de versões específicas e parametrizações das ferramentas através do arquivo: `settings.ini` 
 
 Você pode usar estes scripts como base para personalizar seu ambiente. 
-Para mais detalhes do funcionando e personalização leia: `DEVELOPER.md` 
+Para mais detalhes do funcionando e personalização leia: [DEVELOPER.md]()
 
 
 # Apps / SDKs disponíveis 
@@ -57,3 +57,11 @@ sdk install quarkus
 em outra sessão execute: 
 
 > docker exec -it test_script /app/setup.sh 
+
+# License
+
+Copyright © 2024 Ricardo JL Rufino
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See the COPYING file or http://www.wtfpl.net/ 
+for more details.
