@@ -10,7 +10,7 @@ O script de instalação também possui rotinas de diagnóstico para verificar p
 Os scripts permitem instalação de versões específicas e parametrizações das ferramentas através do arquivo: `settings.ini` 
 
 Você pode usar estes scripts como base para personalizar seu ambiente. 
-Para mais detalhes do funcionando e personalização leia: [](DEVELOPER.md)
+Para mais detalhes do funcionando e personalização leia: [DEVELOPER.md](./DEVELOPER.md)
 
 
 # Apps / SDKs disponíveis 
