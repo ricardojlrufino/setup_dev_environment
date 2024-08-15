@@ -25,7 +25,8 @@ Não deixe de ler os arquivos de instalação para entender o que será feito, c
 
 # Instalação 
 
-> git clone ......  ~/.setup_dev && cd "$_" 
+> git clone (this_repository)  ~/.setup_dev && cd "$_"
+> # Adicionar permissões de execução  
 > find . -type f -iname "*.sh" -exec chmod +x {} \;  
 
 # Executando 
@@ -42,7 +43,7 @@ Na primeira execução ele faz um pré-diagnóstico e sugere e/ou executa modifi
 
 # Sdkman - Java Version Manager 
 
-Você pode instalar por exemplo outras ferramentas e outros JDKs com o sdkman 
+Nos exemplos é instalado o sdkman, junto com o java, e você pode usar ele para instalar outras ferramentas e outros JDK.
 
 Veja: https://sdkman.io/usage 
 
@@ -51,8 +52,8 @@ sdk install quarkus
 
 # Procedimento para testes 
 
-docker run -it --rm --name test_script -v $PWD:/app ubuntu:22.04 
+> docker run -it --rm --name test_script -v $PWD:/app ubuntu:22.04 
   
-em outra sessão execute 
+em outra sessão execute: 
 
-docker exec -it test_script /app/setup.sh 
+> docker exec -it test_script /app/setup.sh 
